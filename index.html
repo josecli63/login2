@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Bootstrap 5</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container w-75 mt-5 bg-black rounded-4 shadow">
+        <div class="row align-items-sm-stretch">
+            <div class="col col-md-6 bg d-none d-lg-block rounded-4">
+            </div>
+            <div class="col bg-white p-5 rounded-end-4">
+                <div class="text-end">
+                    <img src="./img/logo-jc.png" width="50" alt="">
+                </div>
+                <h2 class="fw-bold text-center py-5">Bienvenid@</h2>
+                <!-- Formulario -->
+                <form action="">
+                    <div class="mb-4">
+                        <label for="email" class="form-label fw-bold">Correo electrónico</label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label fw-bold">Contraseña</label>
+                        <input type="password" id="password" class="form-control">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" id="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label fw-bold">Mantenerme conectado</label>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </div>
+
+                    <div class="my-3">
+                        <span>¿No tienes cuenta? <a href="#">Regístrate</a></span><br>
+                        <span><a href="#">Recuperar contraseña</a></span>
+                    </div>
+                </form>
+
+                <!-- Login con Redes Sociales -->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar sesión</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="./img/logo-facebook.png" width="32" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="./img/logo-google.png" width="32" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Google
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
